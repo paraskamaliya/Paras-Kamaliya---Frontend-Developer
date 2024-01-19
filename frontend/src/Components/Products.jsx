@@ -15,7 +15,7 @@ const Products = () => {
             <p className="text-white pt-[3%] text-center text-2xl">Pellentesque habitant morbi tristique senectus et netus et Pellentesque habitant morbi.</p>
         </div>
         <div className="grid pl-[20%] pr-[20%] pt-[5%] gap-10 grid-cols-3 grid-rows-1">
-            <div className="border rounded-md border-secondColor border-3 text-center p-5">
+            <div className="border-2 rounded-md border-secondColor border-3 text-center p-5">
                 <img src={cart} alt="" className="m-auto" />
                 <img src={shape} alt="" className="rotate-180 w-[50%] z-0 hidden" />
                 <h3 className="text-xl font-medium">Bita Marketplace</h3>
@@ -25,7 +25,7 @@ const Products = () => {
                 <img src={shape} alt="" className="w-[50%] z-0 hidden" />
                 <p className="font-light pl-5 pr-5 pb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada </p>
             </div>
-            <div className="border rounded-md border-secondColor border-3 text-center p-5">
+            <div className="border-2 rounded-md border-secondColor border-3 text-center p-5">
                 <img src={coin} alt="" className="m-auto" />
                 <img src={shape} alt="" className="rotate-180 w-[50%] z-0 hidden" />
                 <h3 className="text-xl font-medium">Bitadex</h3>
@@ -35,7 +35,7 @@ const Products = () => {
                 <img src={shape} alt="" className="w-[50%] z-0 hidden" />
                 <p className="font-light pl-5 pr-5 pb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada </p>
             </div>
-            <div className="border rounded-md border-secondColor border-3 text-center p-5">
+            <div className="border-2 rounded-md border-secondColor border-3 text-center p-5">
                 <img src={link} alt="" className="m-auto" />
                 <img src={shape} alt="" className="rotate-180 w-[50%] z-0 hidden" />
                 <h3 className="text-xl font-medium">Bitabridge</h3>
@@ -47,7 +47,7 @@ const Products = () => {
             </div>
         </div>
         <div className="grid pl-[30%] pr-[30%] pt-[2%] gap-10 grid-cols-2 grid-rows-1">
-            <div className="border rounded-md border-secondColor border-3 text-center p-5">
+            <div className="border-2 rounded-md border-secondColor border-3 text-center p-5">
                 <img src={rocket} alt="" className="m-auto" />
                 <img src={shape} alt="" className="rotate-180 w-[50%] z-0 hidden" />
                 <h3 className="text-xl font-medium">Bitapad</h3>
@@ -57,7 +57,7 @@ const Products = () => {
                 <img src={shape} alt="" className="w-[50%] z-0 hidden" />
                 <p className="font-light pl-5 pr-5 pb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada </p>
             </div>
-            <div className="border rounded-md border-secondColor border-3 text-center p-5">
+            <div className="border-2 rounded-md border-secondColor border-3 text-center p-5">
                 <img src={coins} alt="" className="m-auto" />
                 <img src={shape} alt="" className="rotate-180 w-[50%] z-0 hidden" />
                 <h3 className="text-xl font-medium">BitaLend</h3>

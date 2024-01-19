@@ -43,7 +43,7 @@ body {
 }
 
 .animate-hero-image {
-  animation: slideInFromBottom 1.5s ease-out;
+  animation: slideInFromBottom 2s ease-out;
 }
 
 .animate-hero-right {

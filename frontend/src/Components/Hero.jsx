@@ -8,15 +8,15 @@ const Hero = () => {
     useEffect(() => {
         setAnimate(true);
     }, [])
-    return <div className="top-0 w-[100%] z-5">
+    return <div className="top-0 w-[100%] z-1">
         <div className="w-[40%] m-auto pt-20">
             <h1 className={`text-white text-8xl font-bold relative z-5 ${animate ? 'animate-hero-left' : ''}`} >YOUR GATEWAY</h1>
             <h1 className={`text-white text-8xl font-bold relative z-5 ${animate ? 'animate-hero-left' : ''}`} >TO</h1>
             <img src={shape2} alt="shape2" className={`w-[10%] top-[30%] left-[62%] absolute pl-50 ${animate ? 'animate-up-down' : ''}`} />
-            <img src={Home} alt="home" className={`m-auto z-1 absolute pl-40 top-[26%] ${animate ? 'animate-hero-image' : ''}`} />
-            <h1 className={`text-white pt-12 text-8xl font-bold z-2 flex flex-row ${animate ? 'animate-hero-right' : ''}`} >DEFI ON <span className="z-1 text-bitCoinColor">BITCOIN</span></h1>
+            <img src={Home} alt="home" className={`m-auto z-0 absolute pl-40 top-[26%] ${animate ? 'animate-hero-image' : ''}`} />
+            <h1 className={`text-white pt-12 text-8xl font-bold z-0 flex flex-row ${animate ? 'animate-hero-right' : ''}`} >DEFI ON <span className="z-1 text-bitCoinColor">BITCOIN</span></h1>
         </div>
-        <img src={shape1} alt="shape1" className={`absolute top-10 w-[10%] ${animate ? 'animate-up-down' : ''}`} />
+        <img src={shape1} alt="shape1" className={`absolute z-0 top-10 w-[10%] ${animate ? 'animate-up-down' : ''}`} />
         <div className="w-[60%] m-auto p-10 flex flex-col gap-10">
             <div>
                 <h1 className={`text-center text-3xl text-loremColor font-normal ${animate ? 'animate-hero-image' : ''}`}>Lorem ipsum dolor sit amet consectetur. Porta amet tellus suspendisse id velit proin eleifend id mauris. Amet sem in id eget nunc quam lacus tellus augue.</h1>
