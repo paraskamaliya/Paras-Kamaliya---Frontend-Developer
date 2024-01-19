@@ -1,9 +1,7 @@
 import line from "../Assets/line.png";
 import { useEffect, useState } from "react";
-import bit from "../Assets/bit.png";
 const Token = () => {
     const [data, setData] = useState([]);
-    console.log(data);
     const fetchTheData = async () => {
         try {
             let res = await fetch(`https://bitcoin-xaie.onrender.com/coin`, {
