@@ -2,14 +2,18 @@ import line from "../Assets/line.png";
 import { useEffect, useState } from "react";
 const Token = () => {
     const [data, setData] = useState([]);
+    const [load, setLoad] = useState(false);
     const fetchTheData = async () => {
+        setLoad(true);
         try {
             let res = await fetch(`https://bitcoin-xaie.onrender.com/coin`, {
                 method: "GET"
             })
             let data = await res.json();
             setData(data.slice(0, 6));
+            setLoad(false);
         } catch (error) {
+            setLoad(false);
             console.log(error);
         }
     }
@@ -25,6 +29,7 @@ const Token = () => {
             <p className="text-white pt-[3%] text-center text-2xl">Pellentesque habitant morbi tristique senectus et netus et Pellentesque habitant morbi.</p>
         </div>
         <div className="grid grid-cols-3 w-[70%] m-auto gap-10 pt-[5%]">
+            {load && <h1 className="text-4xl text-bitCoinColor text-center">Loading...</h1>}
             {data.length > 0 && data.map((el) => {
                 return <div className="w-[100%] border p-[5%] rounded-md border-bitCoinColor">
                     <img src={el.img} alt="bit" className="w-[30%] m-auto" />
