@@ -5,8 +5,9 @@ import link from "../Assets/link.png";
 import rocket from "../Assets/rocket.png";
 import coin from "../Assets/coin.png";
 import shape from "../Assets/shape.png";
+import { motion } from "framer-motion";
 const Products = () => {
-    return <div className="pt-[10%] pb-[5%] text-white">
+    return <motion.div style={{ paddingTop: "10%", paddingBottom: "5%", color: "white" }} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1.5 }}>
         <div>
             <div className="text-center m-auto">
                 <h1 className="text-white text-6xl">Our <span className="text-bitCoinColor">Products</span></h1>
@@ -68,6 +69,6 @@ const Products = () => {
                 <p className="font-light pl-5 pr-5 pb-5">Pellentesque habitant morbi tristique senectus et netus et malesuada Pellentesque habitant morbi tristique senectus et netus et malesuada </p>
             </div>
         </div>
-    </div>
+    </motion.div>
 }
 export default Products;

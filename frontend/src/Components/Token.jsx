@@ -1,5 +1,6 @@
 import line from "../Assets/line.png";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 const Token = () => {
     const [data, setData] = useState([]);
     const [load, setLoad] = useState(false);
@@ -20,7 +21,7 @@ const Token = () => {
     useEffect(() => {
         fetchTheData();
     }, [])
-    return <div className="pt-[10%] pb-[5%] text-white">
+    return <motion.div className="pt-[10%] pb-[5%] text-white" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 5, duration: 1.5 }}>
         <div>
             <div className="text-center m-auto">
                 <h1 className="text-white text-6xl">Our <span className="text-bitCoinColor">Tokens</span></h1>
@@ -31,7 +32,7 @@ const Token = () => {
         {load && <h1 className="text-4xl text-bitCoinColor text-center mt-10">Loading...</h1>}
         <div className="grid grid-cols-3 w-[70%] m-auto gap-10 pt-[5%]">
             {data.length > 0 && data.map((el) => {
-                return <div className="w-[100%] border p-[5%] rounded-md border-bitCoinColor">
+                return <div className="w-[100%] border p-[5%] rounded-md border-bitCoinColor" key={el._id}>
                     <img src={el.img} alt="bit" className="w-[30%] m-auto" />
                     <h1 className="w-[70%] m-auto text-2xl font-normal">{el.tokenName}</h1>
                     <div className="grid grid-cols-2 w-fit m-auto">
@@ -55,6 +56,6 @@ const Token = () => {
             <p>Page 1 of 10</p>
             <button className="p-3 bg-white text-black rounded-md font-normal w-[100px]">Next</button>
         </div>
-    </div>
+    </motion.div>
 }
 export default Token;
