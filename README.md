@@ -8,7 +8,7 @@ This is a landing page of bitcoin website created with tailwind animations.
 [Bitverse](https://bitverse.vercel.app/)
 
 ### Tech Stacks:-
-HTML | Tailwind CSS | CSS
+HTML | Tailwind CSS | CSS | Framer-motion
 
 ### Home Page :-
 ![Home page](https://github.com/paraskamaliya/Paras_Kamaliya-Frontend_Developer/assets/130351451/a643c720-a044-46fa-bcc1-d579e66553f4)
