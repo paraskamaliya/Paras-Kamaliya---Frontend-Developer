@@ -28,8 +28,8 @@ const Token = () => {
             </div>
             <p className="text-white pt-[3%] text-center text-2xl">Pellentesque habitant morbi tristique senectus et netus et Pellentesque habitant morbi.</p>
         </div>
+        {load && <h1 className="text-4xl text-bitCoinColor text-center mt-10">Loading...</h1>}
         <div className="grid grid-cols-3 w-[70%] m-auto gap-10 pt-[5%]">
-            {load && <h1 className="text-4xl text-bitCoinColor text-center m-auto">Loading...</h1>}
             {data.length > 0 && data.map((el) => {
                 return <div className="w-[100%] border p-[5%] rounded-md border-bitCoinColor">
                     <img src={el.img} alt="bit" className="w-[30%] m-auto" />
