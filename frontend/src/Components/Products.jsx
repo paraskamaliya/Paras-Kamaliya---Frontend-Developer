@@ -5,7 +5,7 @@ import link from "../Assets/link.png";
 import rocket from "../Assets/rocket.png";
 import coin from "../Assets/coin.png";
 import shape from "../Assets/shape.png";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"
 const Products = () => {
     return <motion.div style={{ paddingTop: "10%", paddingBottom: "5%", color: "white" }} initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1, duration: 1.5 }}>
         <div>

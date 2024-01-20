@@ -17,13 +17,13 @@ const Footer = () => {
                     <h1 className="text-5xl font-medium font-sarif">Join our <br /><span className="text-bitCoinColor">Community</span></h1>
                 </div>
                 <div className="flex gap-3">
-                    <a href="">
+                    <a href="#">
                         <img src={email} alt="email" />
                     </a>
-                    <a href="">
+                    <a href="#">
                         <img src={twitter} alt="twitter" />
                     </a>
-                    <a href="">
+                    <a href="#">
                         <img src={instagram} alt="instagram" />
                     </a>
                 </div>
